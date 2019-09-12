@@ -11,5 +11,6 @@ Pod::Spec.new do |s|
     s.vendored_frameworks   = 'frameworks/App.framework', 'frameworks/Flutter.framework'
     s.vendored_libraries    = 'libraries/flutter_sound/libflutter_sound.a', 'libraries/FlutterPluginRegistrant/libFlutterPluginRegistrant.a'
     # s.dependency 'Flutter'
-    s.public_header_files = 'libraries/**/*.h'
+    # s.public_header_files = 'libraries/**/*.h'
+    s.source_files  = "libraries/**/*.{h}"
   end
